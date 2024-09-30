@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My e-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My e-Portfolio</h1>
+    </header>
+    <a href="#top" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 12a.5.5 0 0 1-.5-.5V4.707L5.354 7.854a.5.5 0 0 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 1 1-.708.708L8.5 4.707V11.5a.5.5 0 0 1-.5.5z"/>
+        </svg>
+    </a>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <img src="imgs/mypic.jpeg" alt="Your Photo">
+            <p>Hello! My name is A.T. Senuri Senavirathne,<br> I am a biotechnology student with a passion for applying scientific principles to enhance product quality and safety.
+               <br> My ambition is to become a Quality Control Specialist, where I can leverage my knowledge of biotechnology to ensure that manufacturing processes meet stringent quality standards, contributing to the development of reliable and safe products.</p>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Secondary Education</h3>
+        <ul>
+            <li><strong>School:</strong> Vihara Maha Devi Balika Vidyalaya</li>
+            <li><strong>Level:</strong> Ordinary Level (Completed)</li>
+            <li><strong>Year of Completion:</strong> 2020</li>
+            <li><strong>Subjects and Grades:</strong>
+                <ul>
+                    <li>Science: A</li>
+                    <li>Buddhism: A</li>
+                    <li>Sinhala: A</li>
+                    <li>History: A</li>
+                    <li>Health: A</li>
+                    <li>Sinhala Literature: A</li>
+                    <li>Business Studies: A</li>
+                    <li>Mathematics: B</li>
+                    <li>English: B</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Advanced Level</h3>
+        <ul>
+            <li><strong>Level:</strong> Advanced Level (Completed)</li>
+            <li><strong>Year of Completion:</strong> 2023</li>
+            <li><strong>Subjects and Grades:</strong>
+                <ul>
+                    <li>Biology: C</li>
+                    <li>Chemistry: S</li>
+                    <li>Physics: S</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Higher Education</h3>
+        <ul>
+            <li><strong>Course:</strong> Bachelor of Science in Biotechnology</li>
+            <li><strong>University:</strong> SLIIT Malabe</li>
+            <li><strong>Year of Admission:</strong> 2024</li>
+        </ul>
+    </section>
+
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Intern at Doorway Counseling and Psychotherapy Service:</strong></li>
+            <ul>
+                <li>Assisted in providing support services for clients in counseling and psychotherapy.</li>
+                <li>Gained experience in client interaction, maintaining confidentiality, and administrative tasks.</li>
+                <li>Developed communication and interpersonal skills in a professional setting.</li>
+            </ul>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Effective Communication:</strong> Strong ability to communicate, actively listen, and understand others' concerns.</li>
+            <li><strong>Positive Influence:</strong> Capable of motivating others to adopt a positive mindset in challenging situations.</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+           <li>Listening to music for relaxation and inspiration</li>
+           <li>Reading novels to broaden perspective and stimulate creativity</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tharushasenavirathna5@gmail.com">tharushasenavirathna5@gmail.com</a></p>
+        <br><br>
+        <a href="A.T.Senuri Senevirathna.pdf" download class="button">Download Resume</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My e-Portfolio | Designed by A.T. Senuri Senevirathna</p>
+    </footer>
+
+    <script>
+       
+        window.onscroll = function() {
+            var topButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+    
+      
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
+</body>
+</html>
